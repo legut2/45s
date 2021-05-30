@@ -16,7 +16,7 @@ http://localhost:1234/
 ```  
 and you're up and running!
 
-Please note that `shotgun` helps with application-wide reloading of all source files and templates on each request. You can read more about shotgun [here](https://github.com/rtomayko/shotgun). Shotgun may not work on Windows machines because *[there be POSIX-eating dragons over there](https://en.wikipedia.org/wiki/Here_be_dragons)*. As an alternative, consider using [rerun](https://github.com/alexch/rerun).
+Please note that `shotgun` helps with application-wide reloading of all source files and templates on each request. You can read more about shotgun [here](https://github.com/rtomayko/shotgun). Shotgun may not work on Windows machines because *[there be POSIX-eating dragons over there](https://en.wikipedia.org/wiki/Here_be_dragons)*. As an alternative, consider using [rerun](https://github.com/alexch/rerun) with the following: `rerun ruby .\server.rb`
 
 # Dependencies
 
