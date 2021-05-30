@@ -9,3 +9,7 @@ gem "sinatra"
 gem "shotgun"
 gem "wdm", '>= 0.1.0' if Gem.win_platform?
 gem "rerun", '>= 0.1.0' if Gem.win_platform?
+gem "thin", '>= 0.1.0' if Gem.win_platform?
+# I want to force eventmachine to be installed targeting ruby as the platform because otherwise you can't use eventmachine -> thin -> rerun on windows
+# Haven't tested next line from a clean install on windows just yet
+gem "eventmachine", :force_ruby_platform => true if Gem.win_platform?
