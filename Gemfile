@@ -7,3 +7,5 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 gem "pry"
 gem "sinatra"
 gem "shotgun"
+gem "wdm", '>= 0.1.0' if Gem.win_platform?
+gem "rerun", '>= 0.1.0' if Gem.win_platform?
